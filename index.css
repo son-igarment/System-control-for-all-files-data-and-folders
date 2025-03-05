@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-decoration-line: none;
+  content: ">>";
+}
+.no-select {
+  -moz-user-select: none; /* FireFox */
+  -webkit-user-select: none; /* Chrome/Safari */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none; /* Standard */
+}
+
+/* 在你的styles.css中添加这个自定义类 */
+.custom-dashed {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #cbd5e1; /* 这是Tailwind的gray-400颜色 */
+  border-image: repeating-linear-gradient(to right, #cbd5e1 0, #cbd5e1 10px, transparent 10px, transparent 20px) 1 / 1 / 0 stretch;
+}
